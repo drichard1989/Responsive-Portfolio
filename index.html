@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dylan Richard's Portfolio</title>
+</head>
+<body>
+	
+<!-- This 'header bar' is meant to be a position fixed bar that stays at the top of the page with my name, and links for navigation next to it using semantic elements. I am trying to use semantic elements as much as possible. This will have different layers, and the "headerBar" will go edge to edge.  -->
+
+	<div class="headerBar">
+
+		<!-- "headerWrapper" is the container for containing the header and the nav tags in the 960px and centering it on the page.  -->
+		<div class="narrowHeaderWrapper">
+			<header>
+				<h1>Dylan Richard</h1>
+			</header>
+			<!-- This is the container for my navigation links  -->
+			<nav>
+				<a href="index.html" class="hoverBorder" id="About">About</a>
+
+				<a href="portfolio.html" class="hoverBorder" id="Portfolio">Portfolio</a>
+
+				<a href="contact.html" class="hoverBorder" id="Contact">Contact</a>
+			</nav>
+		</div>
+	</div>
+
+
+	<!-- This class called "wrapper" is meant to wrap both the section element and the aside element, keeping the two columns centered in the page with margins between them.  -->
+	<div class="wrapper">
+
+		<!-- This element "section" will be the left column of this page, and will have the about me section, image, and the bio text as well. -->
+		<section>
+			<h1>About Me</h1>
+				
+				<!-- This is where my headshot is going	to go. -->
+				<div id="imageFloat">
+					<img src="assets/images/headshot.jpg" id="headShot">
+				</div>
+				
+				<!-- These are where the paragraphs for my bio are placed. -->
+				<p class="pText">I was born in Willis, TX, and attended Willis Schools for most of my primary education. I then attended the University of Texas at Tyler, and received a degree in Marketing, along with a minor in Management. While in college, I participated in multiple internships, and received Marketing Student of the Year my senior year. </p>
+				</br>
+				<p class="pText">Through my experiences, I have come to understand the importance of empowering employees, developing win-win relationships with coworkers, and being able to manage top talent while taking ego out of the equation. In reference to one of my favorite entrepreneurs, Steve Jobs, "The best ideas have to win, otherwise good people don't stay." I carry this belief over to my work every day, and continue to brainstorm cutting edge ideas for future development. </p>
+				</br>
+				<p class="pText">I have managed business development, helped develop powerful media marketing plans while utilizing social media platforms, and have provided a creative marketing environment with the help of collaboration with incredible co-workers. I also have extensive experience in technology training, and love the idea of empowering the minds of many with the technology that is shaping the world today.</p>
+				</br>
+				<p class="pText">Today, I am working through a coding program to become a Full Stack Developer, utilizing my critical thinking skills developed though years of experience in the work force, and from graduating from UT Tyler. </p>
+		</section>
+		
+		<!-- Notice here, the aside element is still within the wrapper. This is because the element needs to float next to the section element, while being centered in the page with margins.  -->
+		
+		<aside>
+			<h1>Connect With Me</h1>
+			<!-- This image will be the GitHub Logo -->
+			<a href="https://github.com/drichard1989" target="_blank"><img src="assets/images/gitHubLogo.png"></a>
+			<!-- This image will be the LinkedIn Logo -->
+			<a href="https://www.linkedin.com/in/dylancrichard?trk=nav_responsive_tab_profile" target="_blank"><img src="assets/images/linkedInLogo.png"></a>
+			<!-- This image will be the StackOverflow Logo -->
+			<a href="http://stackoverflow.com/users/6851278/dylan-clay-richard" target="_blank"><img src="assets/images/stackOverFlowLogo.png"></a>
+		</aside>
+	</div>
+
+<div class="push"></div>
+
+<footer>
+	<h1>&copy;Copyright 2016 Dylan Richard</h1>
+</footer>
+
+</body>
+</html>

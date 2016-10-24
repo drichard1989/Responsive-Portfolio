@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dylan Richard's Contact Information</title>
+</head>
+<body>
+
+<!-- This 'header bar' is meant to be a position fixed bar that stays at the top of the page with my name, and links for navigation next to it using semantic elements. I am trying to use semantic elements as much as possible.  -->
+
+	<div class="headerBar">
+
+		<!-- "headerWrapper" is the container for containing the header and the nav tags in the 960px and centering it on the page.  -->
+		<div class="narrowHeaderWrapper">
+			<header>
+				<h1>Dylan Richard</h1>
+			</header>
+
+			<nav>
+				<a href="index.html" class="hoverBorder" id="About">About</a>
+
+				<a href="portfolio.html" class="hoverBorder" id="Portfolio">Portfolio</a>
+
+				<a href="contact.html" class="hoverBorder">Contact</a>
+			</nav>
+		</div>
+	</div>
+
+<!-- This class called "wrapper" is meant to wrap both the section element and the aside element, keeping the two columns centered in the page with margins between them.  -->
+	<div class="wrapper">
+
+		<!-- This element "section" will be the left column of this page, and will have the Contact Me section, Name, Email, and Message Javascript input sections-->
+
+		<section>
+			<h1>Contact</h1>
+				<div class="pText">
+					<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+						<div class="row">
+							<label for="name">Name</label><br />
+							<input id="name" class="input" name="name" type="text" value="" size="30" placeholder="John Smith" /><br />
+						</div>
+						<div class="row">
+							<label for="email">Email</label><br />
+							<input id="email" class="input" name="email" type="text" value="" size="30" placeholder="example@gmail.com" /><br />
+						</div>
+						<div class="row">
+							<label for="message">Message</label><br />
+							<textarea id="message" class="input" name="message" rows="7" cols="30" placeholder="What would you like to say to us?"></textarea><br />
+						</div>
+						<input id="submit_button" type="submit" value="Submit" />
+					</form>		
+				</div>
+		</section>
+
+	<!-- Notice here, the aside element is still within the wrapper. This is because the element needs to float next to the section element, while being centered in the page with margins.  -->
+		<aside>
+			<h1>Connect With Me</h1>
+			<!-- This image will be the GitHub Logo -->
+			<a href="https://github.com/drichard1989" target="_blank"><img src="assets/images/gitHubLogo.png"></a>
+			<!-- This image wil be the LinkedIn Logo -->
+			<a href="https://www.linkedin.com/in/dylancrichard?trk=nav_responsive_tab_profile" target="_blank"><img src="assets/images/linkedInLogo.png"></a>
+			<!-- This image will be the StackOverFlow Logo -->
+			<a href="http://stackoverflow.com/users/6851278/dylan-clay-richard" target="_blank"><img src="assets/images/stackOverFlowLogo.png"></a>
+		</aside>
+	</div>
+
+<div class="push"></div>
+
+<footer>
+	<h1>&copy;Copyright 2016 Dylan Richard</h1>
+</footer>
+
+</body>
+</html>
