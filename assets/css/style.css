@@ -58,7 +58,7 @@ nav {
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
-
+/*This is adding a space between my navigation buttons for asthetics*/
 #About, #Portfolio {
 	border-right: 1px solid grey;
 	padding-right: 15px;	
@@ -66,10 +66,7 @@ nav {
 	margin: 0 auto;
 }
 
-.spacingBorder {
-	float: left;
-}
-
+/*This is creating a background when I hover above a link*/
 .hoverBorder:hover {
 	background-color: grey;	
 	
@@ -114,12 +111,14 @@ section h1 {
 	margin-bottom: 15px;
 }
 
+/*ID for my headshot on my about page, and formatting for that id*/
 #headShot {
 	width: 40%;
 	float: left;
 	margin-right: 10px;
 }
 
+/*This contains the connect with me and formats that area*/
 aside {
 	float: right;
 	width: 30%;
@@ -153,6 +152,7 @@ aside a img {
 	line-height: 200%;
 }
 
+/*This class applies to the photos on the left in portfolio*/
 .img-block1 {
 	width: 45%;
 	position: relative;
@@ -161,6 +161,7 @@ aside a img {
 	margin-top: 10px;
 }
 
+/*This class applies to the photos on the right in portfolio*/
 .img-block2 {
 	width: 45%;
 	position: relative;
@@ -169,11 +170,13 @@ aside a img {
 	margin-top: 10px;
 }
 
+/*This class applies to the headers of the photos in portfolio*/
 .img-block h2 {
 	position: absolute;
 	margin-top: 10px;
 }
 
+/*This class is meant to apply to all photos inside the blocks*/
 .img-responsive {
 	width: 100%;
 	float: left;
@@ -207,7 +210,7 @@ portfolio file.*/
 }
 
 
-
+/*Formatting for my footer element*/
 footer {
 	background-color: #666666;
 	clear: both;
@@ -219,7 +222,8 @@ footer {
 	border-top: 5px solid #4aaaa5;
 }
 
-
+/*This media query overrides certain elements if the width
+of the page is less than 980px*/
 @media screen and (max-width: 980px){
 
 	.narrowHeaderWrapper {
@@ -245,6 +249,9 @@ footer {
 
 	
 }
+
+/*This media query overrides certain elements if the width
+of the page is less than 768px*/
 
 @media screen and (max-width: 768px){
 
@@ -289,7 +296,8 @@ footer {
 	width: 15%;
 	}
 }
-
+/*This media query overrides certain elements if the width
+of the page is less than 640px*/
 @media screen and (max-width: 640px){
 
 	.narrowHeaderWrapper {
